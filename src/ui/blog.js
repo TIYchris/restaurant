@@ -6,7 +6,10 @@ export default React.createClass({
 		return (
 		<div className="blog">
 			<h3>Latest News</h3>
-			<div className="blogFeed"><span>read more ></span></div>
+			<div className="blogFeed">
+			<h4>{this.props.blog.title} {this.props.blog.date_published}</h4>
+    		<div>{this.props.blog.post}</div>
+			<span>read more ></span></div>
 		</div>
 		)
 	}

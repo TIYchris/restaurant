@@ -19,11 +19,15 @@ export function getSpecial(cb) {
   });
 }
 
-
+export function getBlog() {
+  return axios.get('https://json-data.herokuapp.com/restaurant/news/1')
+  
+}
 
 export default {
   getSpecial,
-  getMenu
+  getMenu,
+  getBlog
 }
 import React from 'react';
 
