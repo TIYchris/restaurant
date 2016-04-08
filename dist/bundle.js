@@ -58,6 +58,7 @@
 	
 	var _app2 = _interopRequireDefault(_app);
 	
+<<<<<<< HEAD
 	var _home = __webpack_require__(219);
 	
 	var _home2 = _interopRequireDefault(_home);
@@ -66,10 +67,16 @@
 	
 	// Layout
 	
+=======
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// Components
+>>>>>>> 325d927c0f40583979b51115e3452ee6923c55e5
 	
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
+<<<<<<< HEAD
 	  _react2.default.createElement(
 	    _reactRouter.Route,
 	    { component: _app2.default },
@@ -78,6 +85,12 @@
 	), document.getElementById('app'));
 	
 	// Components
+=======
+	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _app2.default })
+	), document.getElementById('app'));
+	
+	// Layout
+>>>>>>> 325d927c0f40583979b51115e3452ee6923c55e5
 
 /***/ },
 /* 1 */
@@ -24765,8 +24778,11 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+<<<<<<< HEAD
 	__webpack_require__(217);
 	
+=======
+>>>>>>> 325d927c0f40583979b51115e3452ee6923c55e5
 	exports.default = _react2.default.createClass({
 	  displayName: 'app',
 	
@@ -24777,6 +24793,7 @@
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'header' },
+<<<<<<< HEAD
 	        _react2.default.createElement(
 	          'div',
 	          { id: 'social' },
@@ -24789,11 +24806,18 @@
 	            _react2.default.createElement('li', { className: 'zocial-opentable' })
 	          )
 	        )
+=======
+	        _react2.default.createElement('img', { src: 'images/rocky-slims-logo-big.png' })
+>>>>>>> 325d927c0f40583979b51115e3452ee6923c55e5
 	      ),
 	      this.props.children,
 	      _react2.default.createElement(
 	        'div',
+<<<<<<< HEAD
 	        { id: 'footer' },
+=======
+	        { clasName: 'footer' },
+>>>>>>> 325d927c0f40583979b51115e3452ee6923c55e5
 	        _react2.default.createElement(
 	          'p',
 	          null,
@@ -24804,6 +24828,7 @@
 	  }
 	});
 
+<<<<<<< HEAD
 /***/ },
 /* 217 */
 /***/ function(module, exports) {
@@ -24839,6 +24864,8 @@
 	  }
 	});
 
+=======
+>>>>>>> 325d927c0f40583979b51115e3452ee6923c55e5
 /***/ }
 /******/ ]);
 //# sourceMappingURL=bundle.map
