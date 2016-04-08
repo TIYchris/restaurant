@@ -12,7 +12,7 @@ import Home from "ui/home";
 render(
   <Router history={browserHistory}>
     <Route component={App}>
-    	<Route path="/" component={App} />   
+    	<Route path="/" component={Home} />   
     </Route>
   </Router>
 ,document.getElementById('app'));

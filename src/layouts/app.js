@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Banner from 'ui/bannerImageComponent';
+
 require('assets/styles/styles.scss');
 
 
@@ -16,6 +18,7 @@ export default React.createClass({
               <li className="zocial-instagram"></li>
               <li className="zocial-opentable"></li>
             </ul>
+            <Banner/>
           </div>  
         </div>
         {this.props.children}

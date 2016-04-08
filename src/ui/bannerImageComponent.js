@@ -4,7 +4,7 @@ import React from 'react';
 export default React.createClass({
   render: function () {
     return(
-    	<h1>Home</h1>
+    	<img src="/images/mainpage_banner_sepia.png" />
     )
   }
 })
