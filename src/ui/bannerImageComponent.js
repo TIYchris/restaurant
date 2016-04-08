@@ -1,10 +1,11 @@
 import React from 'react';
 
+require('assets/styles/banner.scss');
 
 export default React.createClass({
   render: function () {
     return(
-    	<img src="/images/mainpage_banner_sepia.png" />
+    	<img id="banner" src="/images/mainpage_banner_sepia.png" />
     )
   }
 })
