@@ -19,7 +19,7 @@ export default React.createClass({
               <Banner/>
               <div className="midBar">
                 <Blog/>
-                <Special/>
+                <SpecialContainer/>
                 <Maps/>
               </div>
         </div>
