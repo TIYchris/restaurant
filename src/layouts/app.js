@@ -28,7 +28,7 @@ export default React.createClass({
         <Food/>
         {this.props.children}
         <div id="footer">
-          <p>&copy; 2016 Rocky Slims</p>
+          <p className="copy">&copy; 2016 Rocky Slims</p>
         </div>
       </div>
     );
