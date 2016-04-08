@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Banner from 'ui/bannerImageComponent';
 import Social from "ui/social-media";
-import Special from "ui/special";
+import SpecialContainer from "ui/special-container";
 import Maps from "ui/google-maps";
 
 require('assets/styles/styles.scss');
@@ -16,7 +16,7 @@ export default React.createClass({
           <img id="logo"src="images/rocky-slims-logo-big.png" />
             <Social/>
             <Banner/>
-            <Special/>
+            <SpecialContainer />
         </div>
         <Maps/>
         {this.props.children}
