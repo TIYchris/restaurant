@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Banner from 'ui/bannerImageComponent';
+import Social from "ui/social-media";
 
 require('assets/styles/styles.scss');
 
@@ -10,16 +11,9 @@ export default React.createClass({
     return (
       <div className="app">
         <div className="header">
-          <img src="images/rocky-slims-logo-big.png" />
-          <div id="social">
-            <ul id="icons">
-              <li className="zocial-facebook"></li>
-              <li className="zocial-twitter"></li>
-              <li className="zocial-instagram"></li>
-              <li className="zocial-opentable"></li>
-            </ul>
-            <Banner/>
-          </div>  
+          <img id="logo"src="images/rocky-slims-logo-big.png" />
+            <Social/>
+            <Banner/>  
         </div>
         {this.props.children}
         <div id="footer">
