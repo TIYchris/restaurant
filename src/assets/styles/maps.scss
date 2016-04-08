@@ -1,0 +1,22 @@
+.map-container {
+	background: lightgray;
+	border: 1px solid gray;
+	height: 240px;
+	width: 340px;
+}
+
+iframe {
+	position: relative;
+	top: 2px;
+    left: 19px;
+}
+
+#location {
+	margin: 10px;
+	border-bottom: 1px solid black;
+}
+
+#address {
+	font-size: 14px;
+	margin-left: 20px;
+}
