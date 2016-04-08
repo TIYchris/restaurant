@@ -36,7 +36,7 @@ module.exports = {
       {
         test: /\.css$/i,
         loader: 'style!css'
-      },
+      },  
       {
         test: /\.scss$/i,
         loader: extractCSS.extract(['css', 'sass'])
