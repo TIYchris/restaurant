@@ -25,3 +25,5 @@ export default {
   getSpecial,
   getMenu
 }
+import React from 'react';
+
