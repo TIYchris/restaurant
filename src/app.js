@@ -11,10 +11,8 @@ import Home from "ui/home";
 
 render(
   <Router history={browserHistory}>
-
-
-    <Route path="/" component={App}></Route>
-
-    
+    <Route component={App}>
+    	<Route path="/" component={App} />   
+    </Route>
   </Router>
 ,document.getElementById('app'));

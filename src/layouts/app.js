@@ -8,9 +8,7 @@ export default React.createClass({
     return (
       <div className="app">
         <div className="header">
-
-
-        <img src="images/rocky-slims-logo-big.png" />
+          <img src="images/rocky-slims-logo-big.png" />
           <div id="social">
             <ul id="icons">
               <li className="zocial-facebook"></li>
@@ -19,9 +17,6 @@ export default React.createClass({
               <li className="zocial-opentable"></li>
             </ul>
           </div>  
-
-        <img src="images/rocky-slims-logo-big.png" />
-
         </div>
         {this.props.children}
         <div id="footer">
