@@ -1,0 +1,40 @@
+.reservations label {
+  font-family: Arial;
+  font-weight: 600;
+}
+.reservations input {
+ margin: 10px 0px;
+ height: 25px;
+}
+#fullName {
+  width: 300px;
+}
+textarea {
+  margin: 10px 0px;
+  border: 1px solid #e7e7e7;
+}
+select {
+  margin: 10px 0;
+  border: none;
+  background: #e7e7e7;
+  height: 25px;
+  width: 80px;
+  font-family: Arial;
+  font-weight: 600;
+  outline: none;
+}
+button {
+  margin: 10px 0;
+  width: 120px;
+  height: 35px;
+  font-family: Arial;
+  font-size: 14px;
+  background: black;
+  color: #e7e7e7;
+  border: none;
+  outline: none;
+}
+button:hover {
+  color: black;
+  background: #e7e7e7; 
+}
