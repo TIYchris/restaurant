@@ -7,7 +7,7 @@ export default React.createClass({
 		return (
 			<div className="photo-container">
 				<div className='photo'>
-					<img src="/images/breadsticks.jpg"/>
+					<img src="/images/salmon.jpg"/>
 				</div>
 				<div className='photo'>
 					<img src="/images/cabbagesoup-still-superJumbo.jpg"/>
@@ -19,7 +19,7 @@ export default React.createClass({
 					<img src="/images/steak.jpg"/>
 				</div>
 				<div className='photo'>
-					<img src="/images/Supreme-pizza.jpg"/>
+					<img src="/images/fish.jpg"/>
 				</div>
 			</div>
 		)

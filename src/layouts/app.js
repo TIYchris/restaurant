@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Banner from 'ui/bannerImageComponent';
 import Social from "ui/social-media";
+import Special from "ui/special";
 import Maps from "ui/google-maps";
 import Food from "ui/food-photos";
 
@@ -15,13 +16,14 @@ export default React.createClass({
         <div className="header">
           <img id="logo"src="images/rocky-slims-logo-big.png" />
             <Social/>
-            <Banner/>  
+            <Banner/>
+            <Special/>
         </div>
         <Maps/>
         <Food/>
         {this.props.children}
         <div id="footer">
-          <p>&copy; 2016 TIY</p>
+          <p>&copy; 2016 Rocky Slims</p>
         </div>
       </div>
     );
