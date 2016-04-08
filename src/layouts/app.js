@@ -5,6 +5,7 @@ import Social from "ui/social-media";
 import SpecialContainer from "ui/special-container";
 import Maps from "ui/google-maps";
 import Food from "ui/food-photos";
+import Blog from "ui/blog";
 
 require('assets/styles/styles.scss');
 
@@ -15,11 +16,14 @@ export default React.createClass({
       <div className="app">
         <div className="header">
           <img id="logo"src="images/rocky-slims-logo-big.png" />
-            <Social/>
-            <Banner/>
-            <SpecialContainer />
+              <Social/>
+              <Banner/>
+              <div className="midBar">
+                <Blog/>
+                <SpecialContainer/>
+                <Maps/>
+              </div>
         </div>
-        <Maps/>
         <Food/>
         {this.props.children}
         <div id="footer">
