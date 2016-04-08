@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Banner from 'ui/bannerImageComponent';
 import Social from "ui/social-media";
+import Special from "ui/special";
 
 require('assets/styles/styles.scss');
 
@@ -13,11 +14,12 @@ export default React.createClass({
         <div className="header">
           <img id="logo"src="images/rocky-slims-logo-big.png" />
             <Social/>
-            <Banner/>  
+            <Banner/>
+            <Special/>
         </div>
         {this.props.children}
         <div id="footer">
-          <p>&copy; 2016 TIY</p>
+          <p>&copy; 2016 Rocky Slims</p>
         </div>
       </div>
     );
