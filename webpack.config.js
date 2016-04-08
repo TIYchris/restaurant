@@ -36,10 +36,10 @@ module.exports = {
       {
         test: /\.css$/i,
         loader: 'style!css'
-      },
+      },  
       {
         test: /\.scss$/i,
-        loader: "extractCSS.extract(['css', 'sass'])"
+        loader: extractCSS.extract(['css', 'sass'])
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
