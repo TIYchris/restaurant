@@ -11,6 +11,7 @@ import BlogContainer from "ui/blog-container";
 import ContentNavBar from "ui/contentNavBar"
 import MenuContainer from "ui/menu-container"
 // import Reservation from "ui/reservation"
+import OurStory from 'ui/ourStory'
 
 require('assets/styles/styles.scss');
 
@@ -34,6 +35,9 @@ export default React.createClass({
         <div className="menuFlex">
           <div className="contentBox">
             <MenuContainer/>       
+            <OurStory/>
+            <Menu/>       
+
            {this.props.children}
           </div>
 

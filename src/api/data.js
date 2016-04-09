@@ -20,7 +20,9 @@ export function getSpecial(cb) {
 }
 
 export function getBlog() {
-  return axios.get('https://json-data.herokuapp.com/restaurant/news/1')
+
+  return axios.get('https://json-data.herokuapp.com/restaurant/news/1');
+  
 }
 
 export default {
