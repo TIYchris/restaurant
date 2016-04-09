@@ -9,6 +9,7 @@ import Blog from "ui/blog";
 import Menu from "ui/menu";
 import BlogContainer from "ui/blog-container";
 import ContentNavBar from "ui/contentNavBar"
+import MenuContainer from "ui/menu-container"
 // import Reservation from "ui/reservation"
 
 require('assets/styles/styles.scss');
@@ -32,7 +33,7 @@ export default React.createClass({
         <ContentNavBar/>
         <div className="menuFlex">
           <div className="contentBox">
-            <Menu/>       
+            <MenuContainer/>       
            {this.props.children}
           </div>
 
