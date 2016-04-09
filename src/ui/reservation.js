@@ -1,12 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router';
+// import { Link } from 'react-router';
 require('assets/styles/reservation.scss');
 
 
 export default React.createClass({
+  console.log("tst");
   render: function () {
     return (
-      <form action="#" method="post" clasName="reservations">
+      
+      <form action="" method="post" className="reservations">
         
         <label for="fullName">Full Name</label><br>
         <input type="text" name="fullName" id="fullName" /></br>
@@ -31,6 +33,7 @@ export default React.createClass({
        <button type="submit">Reserve Table</button>
       
       </form>
-    );
-  };
+      
+    )
+  }
 });
