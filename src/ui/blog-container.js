@@ -18,7 +18,6 @@ export default React.createClass({
 		}).catch(function(err){
 			console.error(err);
 		})
-
 	},
 	render: function(){
 		return (

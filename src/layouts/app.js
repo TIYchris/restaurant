@@ -5,6 +5,8 @@ import Social from "ui/social-media";
 import SpecialContainer from "ui/special-container";
 import Maps from "ui/google-maps";
 import Food from "ui/food-photos";
+import Blog from "ui/blog";
+import Menu from "ui/menu";
 import BlogContainer from "ui/blog-container";
 import ContentNavBar from "ui/contentNavBar"
 // import Reservation from "ui/reservation"
@@ -27,10 +29,15 @@ export default React.createClass({
                 <Maps/>
               </div>
         </div>
+        {this.props.children}
         <ContentNavBar/>
         <div className="menuFlex">
           <div className="contentBox">
+
           <OurStory/>
+
+            <Menu/>       
+
            {this.props.children}
           </div>
 
