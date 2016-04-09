@@ -6,6 +6,7 @@ import SpecialContainer from "ui/special-container";
 import Maps from "ui/google-maps";
 import Food from "ui/food-photos";
 import Blog from "ui/blog";
+import Menu from "ui/menu";
 
 require('assets/styles/styles.scss');
 
@@ -24,6 +25,7 @@ export default React.createClass({
                 <Maps/>
               </div>
         </div>
+        <Menu/>
         <Food/>
         {this.props.children}
         <div id="footer">
