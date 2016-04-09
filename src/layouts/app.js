@@ -5,7 +5,6 @@ import Social from "ui/social-media";
 import SpecialContainer from "ui/special-container";
 import Maps from "ui/google-maps";
 import Food from "ui/food-photos";
-import Blog from "ui/blog";
 import BlogContainer from "ui/blog-container";
 
 require('assets/styles/styles.scss');
