@@ -7,6 +7,7 @@ import Maps from "ui/google-maps";
 import Food from "ui/food-photos";
 import BlogContainer from "ui/blog-container";
 import ContentNavBar from "ui/contentNavBar"
+// import Reservation from "ui/reservation"
 
 require('assets/styles/styles.scss');
 
