@@ -38,3 +38,18 @@ button:hover {
   color: black;
   background: #e7e7e7; 
 }
+.resTab p {
+  font-family: Arial;
+  width: 120px;
+  height: 80px;
+  padding-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  border-top: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  margin-left: 280px;
+}
+.hideContent {
+ // display: hidden;
+}
