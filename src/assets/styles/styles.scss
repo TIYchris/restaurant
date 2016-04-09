@@ -22,7 +22,19 @@ body {
 	justify-content: space-between;
 	text-align: center;
 	width: 1100px;
+	margin-top: 25px;
 }
 .copy{
 	color:#E7E7E7;
+}
+.menuFlex {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.contentBox {
+	width: 800px;
+	height: 800px;
+	background: grey;
+	margin-top: 25px;
 }

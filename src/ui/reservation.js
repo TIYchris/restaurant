@@ -6,7 +6,8 @@ require('assets/styles/reservation.scss');
 export default React.createClass({
   render: function () {
     return (
-      <form action="#" method="post" clasName="reservations">
+      <div>
+      <form action="#" method="post" className="reservations">
         
         <label for="fullName">Full Name</label><br>
         <input type="text" name="fullName" id="fullName" /></br>
@@ -31,6 +32,7 @@ export default React.createClass({
        <button type="submit">Reserve Table</button>
       
       </form>
+      </div>
     );
   };
 });

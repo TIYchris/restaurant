@@ -6,6 +6,7 @@ import SpecialContainer from "ui/special-container";
 import Maps from "ui/google-maps";
 import Food from "ui/food-photos";
 import BlogContainer from "ui/blog-container";
+import ContentNavBar from "ui/contentNavBar"
 
 require('assets/styles/styles.scss');
 
@@ -24,8 +25,15 @@ export default React.createClass({
                 <Maps/>
               </div>
         </div>
-        <Food/>
-        {this.props.children}
+        <ContentNavBar/>
+        <div className="menuFlex">
+          <div className="contentBox">
+           {this.props.children}
+          </div>
+
+          <Food/>
+        </div>
+
         <div id="footer">
           <p className="copy">&copy; 2016 Rocky Slims</p>
         </div>
