@@ -36,9 +36,8 @@ export default React.createClass({
           <div className="contentBox">
             <MenuContainer/>       
             <OurStory/>
-            <Menu/>       
-
-           {this.props.children}
+            
+            {this.props.children}
           </div>
 
           <Food/>

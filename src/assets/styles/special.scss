@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .specialBox{
 	height:240px;
 	width:340px;
@@ -13,7 +16,8 @@
 	padding-right: 8px;
 }
 .headerBox {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #b3b3b3;
+	padding-bottom: 15px;
 }
 .foodDescription{
 	margin-top: -10px;

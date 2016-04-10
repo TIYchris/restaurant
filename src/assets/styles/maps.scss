@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .map-container {
   	background: #E7E7E7;
 	border: 1px solid gray;
@@ -5,16 +8,15 @@
 	width: 340px;
 }
 
-iframe {
-	padding: 15px;
-}
-
 #location {
 	margin: 10px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #b3b3b3;
+	padding-bottom:15px;
 }
 
 #address {
 	font-size: 14px;
-	margin-left: 20px;
+    margin-left: 2px;
+    position: relative;
+    top: -8px;
 }

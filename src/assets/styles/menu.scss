@@ -9,6 +9,7 @@
 	background: #E7E7E7;
 	width: 600px;
 	margin-top: 20px;
+	color: black;
 }
 
 .selection {
@@ -23,17 +24,166 @@ h3 {
 }
 
 .menu-item {
-	margin-left: 30px;
+	margin: 0 30px;
+	display: flex;
+	align-items: baseline;
+
 }
 
 .desc {
-	margin: 30px;
+	margin: 2px 0 0 49px;
 	width: 410px;
 	font-size: 13px;
 }
 
 .menuIcons {
 	position: relative;
-	top: -96px;
+	top: -40px;
     left: 449px;
+}
+.entreesIcons{
+	position: relative;
+    top: -15px;
+    left: 449px;
+}
+.sideIcons {
+	position: relative;
+    top: -3px;
+    left: 449px;
+}
+.allergyIcon:hover > .allergyHover {
+	display: block;
+}	
+
+.allergyHover {	
+	font-size: 12px;
+	top:30px;
+	left:0px;
+	padding: 0 10px;
+	width:180px;
+	height: auto;
+	background-color: #569342;
+	position: absolute;
+	display: none;
+	z-index: 1000;
+}
+.allergyHoverTriangle{
+	top:-15px;
+	left: 36px;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 12.5px 15px 12.5px;
+	border-color: transparent transparent #569342 transparent;
+}
+.allergyTitle{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 15px;
+	border-bottom: 1px solid black;	
+}
+
+.favoriteIcon:hover > .favoriteHover {
+	display: block;
+}	
+
+.favoriteHover {	
+	font-size: 12px;
+	top:30px;
+	left:0px;
+	padding: 0 10px;
+	width:180px;
+	height: auto;
+	background-color: #569342;
+	position: absolute;
+	display: none;
+	z-index: 1000;
+}
+.favoriteHoverTriangle{
+	top:-15px;
+	left: 51px;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 12.5px 15px 12.5px;
+	border-color: transparent transparent #569342 transparent;
+}
+.favoriteTitle{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 15px;	
+	border-bottom: 1px solid black;	
+}
+
+.spiceyIcon:hover > .spiceyHover {
+	display: block;
+}	
+
+.spiceyHover {	
+	font-size: 12px;
+	top:30px;
+	left:0px;
+	padding: 0 10px;
+	width:180px;
+	height: auto;
+	background-color: #569342;
+	position: absolute;
+	display: none;
+	z-index: 1000;
+}
+.spiceyHoverTriangle{
+	top:-15px;
+	left: 65px;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 12.5px 15px 12.5px;
+	border-color: transparent transparent #569342 transparent;
+}
+.spiceyTitle{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 15px;
+	border-bottom: 1px solid black;		
+}
+.veganIcon:hover > .veganHover {
+	display: block;
+}	
+
+.veganHover {	
+	font-size: 12px;
+	top: 30px;
+	left: 0px;
+	padding: 0 10px;
+	width: 180px;
+	height: auto;
+	background-color: #569342;
+	position: absolute;
+	display: none;
+	z-index: 1000;
+}
+.veganHoverTriangle{
+	top:-15px;
+	left: 80px;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 12.5px 15px 12.5px;
+	border-color: transparent transparent #569342 transparent;
+}
+.veganTitle{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 15px;
+	border-bottom: 1px solid black;	
+}
+
+.dots {
+	border-bottom: 2px dotted black;
+	flex-grow: 1;
+	margin: 0 10px;
 }
