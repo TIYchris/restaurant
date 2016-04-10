@@ -30,12 +30,11 @@ export default React.createClass({
                 <Maps/>
               </div>
         </div>
-        {this.props.children}
+
         <ContentNavBar/>
         <div className="menuFlex">
           <div className="contentBox">
-            <MenuContainer/>       
-            <OurStory/>
+            
             
             {this.props.children}
           </div>

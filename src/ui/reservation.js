@@ -1,4 +1,4 @@
-br /import React from 'react';
+import React from 'react';
 // import { Link } from 'react-router';
 require('assets/styles/reservation.scss');
 

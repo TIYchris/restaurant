@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-dom';
+import { Link } from 'react-router';
 require('assets/styles/contentNavBar.scss');
 
 
@@ -7,9 +7,9 @@ export default React.createClass({
 	render: function(){
 		return (
 			  <nav className="tabs">
-			    <a href="/" id="story">Our Story</a>
-			    <a href="/" id="menu">Menu</a>
-			    <a href="/" id="resForm">Reservations</a>
+			    <Link to="/ourStory" id="story">Our Story</Link>
+			    <Link to="/menu-container" id="menu">Menu</Link>
+			    <Link to="/reservation" id="resForm">Reservations</Link>
 			  </nav>
 		)
 	}
