@@ -1,0 +1,47 @@
+{
+  "reservations": [
+    {
+      "name": "Michael",
+      "guests": 2,
+      "id": 1
+    },
+    {
+      "name": "Michael",
+      "guests": 3,
+      "id": 2
+    },
+    {
+      "name": "Mark",
+      "guests": 2,
+      "id": 3
+    },
+    {
+      "name": "Chris",
+      "guests": 3,
+      "id": 4
+    },
+    {
+      "name": "asdf",
+      "guests": "03",
+      "id": 5
+    },
+    {
+      "name": "asdf",
+      "guests": "02",
+      "id": 6
+    },
+    {
+      "name": "asdf",
+      "guests": 3,
+      "id": 7
+    },
+    {
+      "name": "John Doe",
+      "guests": 1,
+      "date": "2016-04-20",
+      "notes": "Please don't look me in the eye.",
+      "location": "basement",
+      "id": 8
+    }
+  ]
+}

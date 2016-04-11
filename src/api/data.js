@@ -25,10 +25,15 @@ export function getBlog() {
   
 }
 
+export function postReservation(data){
+  return axios.post('http://localhost:8001/reservations', data);
+}
+
 export default {
   getSpecial,
   getMenu,
-  getBlog
+  getBlog,
+  postReservation
 }
 import React from 'react';
 

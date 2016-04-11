@@ -17,7 +17,7 @@ import OurStory from "ui/ourStory";
 render(
   <Router history={browserHistory}>
     <Route component={App}>
-    	<Route path="/" component={Home} />
+    	<Route path="/" component={OurStory} />
     	<Route path="/menu-container" component={Menu} />
     	<Route path="/reservation" component={Reservation} />
     	<Route path="/ourStory" component={OurStory} />   

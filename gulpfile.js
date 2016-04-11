@@ -9,6 +9,17 @@ gulp.task('clean', function() {
 		.pipe(clean())
 });
 
+gulp.task('serve:api', function (cb) {
+  var apiServer = jsonServer.create();
+  var router = jsonServer.router('db.json');
+
+  apiServer.use(jsonServer.defaults());
+  apiServer.use(router);
+  apiServer.listen(8001);
+
+  cb();
+});
+
 // Webpack
 gulp.task('webpack', function() {
   return gulp.src('./src/app.js')
@@ -32,4 +43,4 @@ gulp.task('watch', function() {
     gulp.watch('./src/**/*', ['webpack'])
 })
 
-gulp.task('default', ['images', 'serve:web', 'webpack', 'watch']);
+gulp.task('default', ['images', 'serve:web', 'serve:api', 'webpack', 'watch']);
