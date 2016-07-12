@@ -6,7 +6,6 @@ function getAllergyText(item) {
     if (item.allergies === 1) {
         return "This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.";
     }
-
     return "This item does not contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.";
 }
 
@@ -14,7 +13,6 @@ function getFavoriteText(item) {
     if (item.favorite === 1) {
         return "We have been doing this a long time and this item has become one of our favorites.";
     }
-
     return "Please let us know if this is one of your favorite items.";
 }
 
@@ -22,7 +20,6 @@ function getSpiceyText(item) {
     if (item.spicey === 1) {
         return "This item is spicy, please handle with care and drink lots of water.";
     }
-
     return "This item is not spicy.";
 }
 
@@ -30,7 +27,6 @@ function getVeganText(item) {
     if (item.vegan === 1) {
         return "This item contains no meat and has been prepared without the use of animal products.";
     }
-
     return "This item contains tasty animal parts.";
 }
 

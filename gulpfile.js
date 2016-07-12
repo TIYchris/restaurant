@@ -1,46 +1,41 @@
 var gulp = require('gulp');
 var webpack = require('webpack-stream');
-var serve = require('gulp-serve');
 var jsonServer = require('json-server');
 var clean = require('gulp-clean');
 
 gulp.task('clean', function() {
-	return gulp.src(['dist/*'], {read:false})
+	return gulp.src(['public/*'], {read:false})
 		.pipe(clean())
 });
 
-gulp.task('serve:api', function (cb) {
+gulp.task('serve', function (cb) {
   var apiServer = jsonServer.create();
   var router = jsonServer.router('db.json');
 
   apiServer.use(jsonServer.defaults());
   apiServer.use(router);
-  apiServer.listen(8001);
+  apiServer.listen(process.env.PORT || 8000);
 
   cb();
 });
+
+gulp.task('build', ['images', 'webpack'])
 
 // Webpack
 gulp.task('webpack', function() {
   return gulp.src('./src/app.js')
     .pipe(webpack(require('./webpack.config.js')))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./public'));
 });
 
-gulp.task('images', ['clean'], function() {
+gulp.task('images', function() {
   gulp.src(['./src/assets/images/*.*'], {base: './src/assets'})
-  .pipe(gulp.dest('dist'));
+  .pipe(gulp.dest('public'));
 });
-
-// Web Server
-gulp.task('serve:web', serve({
-  root: ['./dist'],
-  port: 8000
-}));
 
 // Watch
 gulp.task('watch', function() {
-    gulp.watch('./src/**/*', ['webpack'])
+    gulp.watch('./src/**/*', ['build'])
 })
 
-gulp.task('default', ['images', 'serve:web', 'serve:api', 'webpack', 'watch']);
+gulp.task('default', ['build', 'serve', 'watch']);
